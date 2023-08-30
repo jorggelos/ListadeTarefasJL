@@ -1,4 +1,4 @@
-package lista.titopetri.com.listadetarefas.db;
+package lista.jorggelos.com.listadetarefas.db;
 
 /**
  * Created by Tito Petri on 05/11/2015.

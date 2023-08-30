@@ -1,4 +1,4 @@
-package lista.titopetri.com.listadetarefas;
+package lista.jorggelos.com.listadetarefas;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -6,7 +6,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import titopetri.com.listadetarefas.R;
+import jorggelos.com.listadetarefas.R;
 
 public class MainActivity extends AppCompatActivity {
 

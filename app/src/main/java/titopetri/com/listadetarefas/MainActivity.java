@@ -1,4 +1,4 @@
-package titopetri.com.listadetarefas;
+package jorggelos.com.listadetarefas;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -14,8 +14,8 @@ import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
 import android.widget.TextView;
 
-import titopetri.com.listadetarefas.db.TaskContract;
-import titopetri.com.listadetarefas.db.TaskDBHelper;
+import jorggelos.com.listadetarefas.db.TaskContract;
+import jorggelos.com.listadetarefas.db.TaskDBHelper;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -73,14 +73,14 @@ public class MainActivity extends AppCompatActivity {
                         String tarefa = inputField.getText().toString();
                         Log.d("MainActivity", tarefa);
 
-                        helper = new titopetri.com.listadetarefas.db.TaskDBHelper(MainActivity.this);
+                        helper = new jorggelos.com.listadetarefas.db.TaskDBHelper(MainActivity.this);
                         SQLiteDatabase db = helper.getWritableDatabase();
                         ContentValues values = new ContentValues();
 
                         values.clear();
-                        values.put(titopetri.com.listadetarefas.db.TaskContract.Columns.TAREFA, tarefa);
+                        values.put(jorggelos.com.listadetarefas.db.TaskContract.Columns.TAREFA, tarefa);
 
-                        db.insertWithOnConflict(titopetri.com.listadetarefas.db.TaskContract.TABLE, null, values,
+                        db.insertWithOnConflict(jorggelos.com.listadetarefas.db.TaskContract.TABLE, null, values,
                                 SQLiteDatabase.CONFLICT_IGNORE);
 
                         updateUI();

@@ -1,4 +1,4 @@
-package titopetri.com.listadetarefas;
+package jorggelos.com.listadetarefas;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
